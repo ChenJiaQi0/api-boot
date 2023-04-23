@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 /**
  * 登录用户信息
  *
- * @author mqxu
+ * @author chen
  */
 @Data
 public class UserDetail implements UserDetails {

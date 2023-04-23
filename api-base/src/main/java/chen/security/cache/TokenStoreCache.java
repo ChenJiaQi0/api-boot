@@ -9,7 +9,7 @@ import chen.security.user.UserDetail;
 /**
  * 登录用户的缓存操作
  *
- * @author mqxu
+ * @author chen
  */
 @Component
 @AllArgsConstructor
