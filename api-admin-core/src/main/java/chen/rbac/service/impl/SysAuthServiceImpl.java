@@ -1,6 +1,7 @@
 package chen.rbac.service.impl;
 
 import chen.common.exception.ServerException;
+import chen.rbac.service.SysCaptchaService;
 import chen.rbac.vo.SysAccountLoginVO;
 import chen.rbac.vo.SysTokenVO;
 import chen.security.cache.TokenStoreCache;
@@ -24,9 +25,15 @@ import org.springframework.security.core.Authentication;
 public class SysAuthServiceImpl implements SysAuthService {
     private final TokenStoreCache tokenStoreCache;
     private final AuthenticationManager authenticationManager;
+    private final SysCaptchaService sysCaptchaService;
 
     @Override
     public SysTokenVO loginByAccount(SysAccountLoginVO login) {
+        boolean flag = sysCaptchaService.validate(login.getKey(), login.getCaptcha());
+        if (!flag){
+            throw new ServerException("验证码错误");
+        }
+
         Authentication authentication;
         try {
             // 用户认证

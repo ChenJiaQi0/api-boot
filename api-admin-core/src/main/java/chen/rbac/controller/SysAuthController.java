@@ -1,13 +1,12 @@
 package chen.rbac.controller;
 
+import chen.rbac.service.SysCaptchaService;
+import chen.rbac.vo.SysCaptchaVO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import chen.common.utils.Result;
 import chen.rbac.service.SysAuthService;
 import chen.rbac.vo.SysAccountLoginVO;
@@ -25,6 +24,14 @@ import chen.security.utils.TokenUtils;
 @AllArgsConstructor
 public class SysAuthController {
     private final SysAuthService sysAuthService;
+    private final SysCaptchaService sysCaptchaService;
+
+    @GetMapping("captcha")
+    @Operation(summary = "验证码")
+    public Result<SysCaptchaVO> captcha(){
+        SysCaptchaVO captchaVO = sysCaptchaService.generate();
+        return Result.ok(captchaVO);
+    }
 
     @PostMapping("login")
     @Operation(summary = "账号密码登录")

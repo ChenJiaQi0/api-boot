@@ -17,3 +17,22 @@
 2023-04-23 21:19:48.997 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-04-23 21:19:48.997 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2023-04-23 21:19:48.998 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-23 21:26:52.158 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-23 21:26:52.197 [main] INFO  chen.ServerApplication - Starting ServerApplication using Java 17.0.4.1 with PID 6624 (D:\program\api-boot\api-server\target\classes started by ChenQi in D:\program\api-boot)
+2023-04-23 21:26:52.198 [main] INFO  chen.ServerApplication - The following 1 profile is active: "dev"
+2023-04-23 21:26:52.845 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-23 21:26:52.847 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-23 21:26:52.870 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2023-04-23 21:26:53.302 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-23 21:26:53.313 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-23 21:26:53.314 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-23 21:26:53.314 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-23 21:26:53.383 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-23 21:26:53.384 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1150 ms
+2023-04-23 21:26:54.627 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d4b45b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d0b276e, org.springframework.security.web.context.SecurityContextHolderFilter@1ad1f167, org.springframework.security.web.header.HeaderWriterFilter@625db0e0, org.springframework.security.web.authentication.logout.LogoutFilter@622ba721, chen.security.filter.AuthenticationTokenFilter@631bc9f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d2b13b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30eb55c9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31531d0d, org.springframework.security.web.session.SessionManagementFilter@29ba63f0, org.springframework.security.web.access.ExceptionTranslationFilter@2aac6fa7, org.springframework.security.web.access.intercept.AuthorizationFilter@75c77add]
+2023-04-23 21:26:54.863 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-23 21:26:54.877 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-23 21:26:54.886 [main] INFO  chen.ServerApplication - Started ServerApplication in 3.04 seconds (process running for 3.65)
+2023-04-23 21:27:08.610 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-23 21:27:08.610 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-23 21:27:08.611 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
