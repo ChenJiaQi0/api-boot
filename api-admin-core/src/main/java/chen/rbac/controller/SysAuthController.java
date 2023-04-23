@@ -16,7 +16,7 @@ import chen.security.utils.TokenUtils;
 /**
  * 认证接口
  *
- * @author mqxu
+ * @author chen
  **/
 @RestController
 @RequestMapping("sys/auth")

@@ -14,7 +14,7 @@ import chen.rbac.vo.SysCaptchaVO;
 /**
  * 验证码接口实现
  *
- * @author mqxu
+ * @author chen
  */
 @Service
 @AllArgsConstructor

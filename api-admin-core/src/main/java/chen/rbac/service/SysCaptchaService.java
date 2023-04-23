@@ -5,7 +5,7 @@ import chen.rbac.vo.SysCaptchaVO;
 /**
  * 验证码接口
  *
- * @author mqxu
+ * @author chen
  */
 public interface SysCaptchaService {
     /**

@@ -10,7 +10,7 @@ import chen.security.user.UserDetail;
 /**
  * 系统用户实体转换
  *
- * @author moqi
+ * @author chen
  */
 @Mapper
 public interface SysUserConvert {
