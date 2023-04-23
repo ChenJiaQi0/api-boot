@@ -9,14 +9,19 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>api-admin-core</artifactId>
-    <description>后台系统核心功能模块</description>
-    <packaging>jar</packaging>
+    <artifactId>api-server</artifactId>
+    <description>服务启动模块</description>
 
     <dependencies>
         <dependency>
             <groupId>chen</groupId>
             <artifactId>api-base</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>chen</groupId>
+            <artifactId>api-admin-core</artifactId>
             <version>${revision}</version>
         </dependency>
 
@@ -27,9 +32,21 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.whvcse</groupId>
-            <artifactId>easy-captcha</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
+
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
