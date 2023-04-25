@@ -15,10 +15,10 @@ public interface IndexService {
     List<PanelVO> statistics1();
 
     /**
-     * 后台首页统计2: echarts柱状图
+     * 后台首页统计2: echarts柱状图 根据类型获取echarts柱状图数据
      * @return BarVO
      */
-    BarVO statistics2();
+    BarVO statistics2(String type);
 
     /**
      * 后台首页统计3: 分类统计标签

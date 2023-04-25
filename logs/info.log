@@ -22,3 +22,28 @@
 2023-04-25 13:42:05.650 [http-nio-8080-exec-18] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Start completed.
 2023-04-25 14:14:27.111 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown initiated...
 2023-04-25 14:14:27.113 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown completed.
+2023-04-25 14:14:31.137 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-25 14:14:31.166 [main] INFO  chen.ServerApplication - Starting ServerApplication using Java 17.0.4.1 with PID 13692 (D:\program\api-boot\api-server\target\classes started by ChenQi in D:\program\api-boot)
+2023-04-25 14:14:31.166 [main] INFO  chen.ServerApplication - The following 1 profile is active: "dev"
+2023-04-25 14:14:31.799 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-25 14:14:31.802 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-25 14:14:31.828 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2023-04-25 14:14:32.293 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-25 14:14:32.299 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-25 14:14:32.300 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-25 14:14:32.300 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-25 14:14:32.374 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-25 14:14:32.375 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1179 ms
+2023-04-25 14:14:33.543 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20171cdc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58f97013, org.springframework.security.web.context.SecurityContextHolderFilter@63f2d024, org.springframework.security.web.header.HeaderWriterFilter@490d9c41, org.springframework.security.web.authentication.logout.LogoutFilter@582c1f8d, chen.security.filter.AuthenticationTokenFilter@2109a691, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@405223e4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d2133fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d70ba18, org.springframework.security.web.session.SessionManagementFilter@31c5304f, org.springframework.security.web.access.ExceptionTranslationFilter@4067634b, org.springframework.security.web.access.intercept.AuthorizationFilter@6723e6b3]
+2023-04-25 14:14:33.801 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-25 14:14:33.818 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25 14:14:33.826 [main] INFO  chen.ServerApplication - Started ServerApplication in 2.922 seconds (process running for 3.388)
+2023-04-25 14:15:04.008 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25 14:15:04.009 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-25 14:15:04.009 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-25 14:15:04.805 [http-nio-8080-exec-29] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 247 ms
+2023-04-25 14:31:04.098 [http-nio-8080-exec-24] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Starting...
+2023-04-25 14:31:04.439 [http-nio-8080-exec-24] INFO  com.zaxxer.hikari.pool.HikariPool - MakuHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b720315
+2023-04-25 14:31:04.441 [http-nio-8080-exec-24] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Start completed.
+2023-04-25 15:06:24.846 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown initiated...
+2023-04-25 15:06:24.847 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown completed.

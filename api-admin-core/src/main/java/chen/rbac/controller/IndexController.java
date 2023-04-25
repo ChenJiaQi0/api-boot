@@ -8,6 +8,7 @@ import chen.rbac.vo.PanelVO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
+import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,8 +32,8 @@ public class IndexController {
 
     @GetMapping("statistics2")
     @Operation(summary = "统计组件2")
-    public Result<BarVO> getStatistics2(){
-        BarVO barVO = indexService.statistics2();
+    public Result<BarVO> getStatistics2(@Param("type") String type){
+        BarVO barVO = indexService.statistics2(type);
         return Result.ok(barVO);
     }
 
